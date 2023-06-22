@@ -1,0 +1,91 @@
+### Tutorial de como utilizar e passar arquivos para o GitHub através de Git:
+
+1. Primeiramente é necessário instalar o Git na maquina utilizada através do site introduzido na apresentação da equipe Git/GitHub. (https://gitforwindows.org/);
+2. Após instalar e configurar de acordo com as suas necessidades, cria-se um novo repositório em seu GitHub (creio que não é preciso explicar essa parte), de preferencia sem Readme. 
+3. Em seguida, cria-se uma pasta em sua maquina (é recomendado que essa pasta esteja em  /c/Users/seu Usuário.
+4. Tendo a pasta pronta e com arquivos ou files de sua preferencia adicionados a ela, clica-se com o botão esquerdo do mouse na pasta uma vez e, em seguida, botão direito; ao fazer isso, irá aparecer uma série de ações possíveis para aquela pasta inclusive a opção “Git Bash Here”. Ao clicar nessa opção, um terminal é aberto.
+5. No terminal, dá-se o seguinte comando para iniciar:
+    
+    ```bash
+    $ git init
+    ```
+    
+6. Após iniciar, deve-se conectar ao seu GitHub através do comando:
+    
+    ```bash
+    $ git remote add origin https://github.com/Sasury-Ryash/MFDS-Git.git
+    ```
+    
+7. Em seguida, adiciona-se:
+    
+    ```bash
+    $ git add .
+    ```
+    
+8. Para saber se funcionou, utiliza-se:
+    
+    ```bash
+    $ git status
+    ```
+    
+9. Em seguida, dá-se commit da pasta:
+    
+    ```bash
+    $ git commit -m "Sua mensagem de commit"
+    ```
+    
+10. Por fim, sobe-se a pasta para o GitHub através do comando:
+    
+    ```bash
+    $ git push -u origin master
+    ```
+    
+11. Pronto! Sua pasta e arquivos estão no GitHub. Basta checar em seu repositório para ter certeza.
+
+### Meu código do terminal
+
+```bash
+carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
+$ git init
+Reinitialized existing Git repository in C:/Users/carol/Favorites/MFDS/.git/
+
+carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
+$ git remote add origin https://github.com/Sasury-Ryash/MFDS-Git.git
+error: remote origin already exists.
+
+carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
+$ git add .
+
+carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   20200213_130527 - Copia.jpg
+
+carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
+$ git commit -m "Esse é o Duck, diga oi!"
+[master (root-commit) 62dc5ec] Esse é o Duck, diga oi!
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 20200213_130527 - Copia.jpg
+
+carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
+$ git push -u origin master
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 175.24 KiB | 5.65 MiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/Sasury-Ryash/MFDS-Git.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+```
+
+### Print do terminal:
+
+![2023-06-22 (2).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c720e6c0-b1d0-4ad5-8ca6-a88f9edc8b73/2023-06-22_(2).png)
