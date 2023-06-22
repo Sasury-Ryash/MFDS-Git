@@ -1,49 +1,54 @@
 ### Tutorial de como utilizar e passar arquivos para o GitHub através de Git:
 
 1. Primeiramente é necessário instalar o Git na maquina utilizada através do site introduzido na apresentação da equipe Git/GitHub. (https://gitforwindows.org/);
+
 2. Após instalar e configurar de acordo com as suas necessidades, cria-se um novo repositório em seu GitHub (creio que não é preciso explicar essa parte), de preferencia sem Readme. 
-3. Em seguida, cria-se uma pasta em sua maquina (é recomendado que essa pasta esteja em  /c/Users/seu Usuário.
-4. Tendo a pasta pronta e com arquivos ou files de sua preferencia adicionados a ela, clica-se com o botão esquerdo do mouse na pasta uma vez e, em seguida, botão direito; ao fazer isso, irá aparecer uma série de ações possíveis para aquela pasta inclusive a opção “Git Bash Here”. Ao clicar nessa opção, um terminal é aberto.
+
+3. Em seguida, cria-se uma pasta em sua maquina (é recomendado que essa pasta esteja em  /c/Users/seu Usuário.)
+
+4. Tendo a pasta pronta e com arquivos ou files de sua preferencia adicionados a ela, clica-se com o botão esquerdo do mouse na pasta uma vez e, em seguida, botão direito; ao fazer isso, irá aparecer uma série de ações 
+possíveis para aquela pasta inclusive a opção “Git Bash Here”. Ao clicar nessa opção, um terminal é aberto.
+
 5. No terminal, dá-se o seguinte comando para iniciar:
-    
+    -------------------------------------------------------------------------------
     ```bash
     $ git init
     ```
-    
+    -------------------------------------------------------------------------------
 6. Após iniciar, deve-se conectar ao seu GitHub através do comando:
-    
+    -------------------------------------------------------------------------------
     ```bash
     $ git remote add origin https://github.com/Sasury-Ryash/MFDS-Git.git
     ```
-    
+    -------------------------------------------------------------------------------
 7. Em seguida, adiciona-se:
-    
+    -------------------------------------------------------------------------------
     ```bash
     $ git add .
     ```
-    
+    -------------------------------------------------------------------------------
 8. Para saber se funcionou, utiliza-se:
-    
+    -------------------------------------------------------------------------------
     ```bash
     $ git status
     ```
-    
+    -------------------------------------------------------------------------------
 9. Em seguida, dá-se commit da pasta:
-    
+    -------------------------------------------------------------------------------
     ```bash
     $ git commit -m "Sua mensagem de commit"
     ```
-    
+    -------------------------------------------------------------------------------
 10. Por fim, sobe-se a pasta para o GitHub através do comando:
-    
+    -------------------------------------------------------------------------------
     ```bash
     $ git push -u origin master
     ```
-    
+    -------------------------------------------------------------------------------
 11. Pronto! Sua pasta e arquivos estão no GitHub. Basta checar em seu repositório para ter certeza.
 
 ### Meu código do terminal
-
+------------------------------------------------------------------------------------
 ```bash
 carol@LAPTOP-OF0B11VG MINGW64 ~/Favorites/MFDS (master)
 $ git init
@@ -85,7 +90,4 @@ To https://github.com/Sasury-Ryash/MFDS-Git.git
  * [new branch]      master -> master
 branch 'master' set up to track 'origin/master'.
 ```
-
-### Print do terminal:
-
-![2023-06-22 (2).png](https://s3-us-west-2.amazonaws.com/secure.notion-static.com/c720e6c0-b1d0-4ad5-8ca6-a88f9edc8b73/2023-06-22_(2).png)
+--------------------------------------------------------------------------------------------
